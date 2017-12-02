@@ -1,3 +1,7 @@
+// Day Two! Blurb can be found here https://adventofcode.com/2017/day/2
+// My personal string can be found in input.txt
+// My answer was 285 
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
