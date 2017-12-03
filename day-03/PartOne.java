@@ -1,3 +1,7 @@
+// Find the blurb for today's exercise here:
+// http://adventofcode.com/2017/day/3/
+// My answer was 438
+
 class PartOne {
 
 	public static void main(String[] args) {
