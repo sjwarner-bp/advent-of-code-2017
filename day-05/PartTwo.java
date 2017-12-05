@@ -31,24 +31,24 @@ class PartTwo {
         }
 
         int steps = 0;
-        int i = 0;
+        int pos = 0;
 
         while (true) {
 
-            int pos = 0; 
+            int val = 0; 
             
             try {
-                pos = memory.get(i);
+                val = memory.get(pos);
             } catch (IndexOutOfBoundsException ex) {
                 break;
             }
 
-            if (pos >= 3) {
-                memory.set(i , pos - 1);
+            if (val >= 3) {
+                memory.set(pos , val - 1);
             } else {
-                memory.set(i, pos + 1);
+                memory.set(pos, val + 1);
             }
-            i += pos;
+            pos += val;
 
             steps++;
 

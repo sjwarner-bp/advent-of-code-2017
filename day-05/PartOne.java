@@ -31,20 +31,20 @@ class PartOne {
         }
 
         int steps = 0;
-        int i = 0;
+        int pos = 0;
 
         while (true) {
 
-            int pos = 0; 
+            int val = 0; 
             
             try {
-                pos = memory.get(i);
+                val = memory.get(pos);
             } catch (IndexOutOfBoundsException ex) {
                 break;
             }
 
-            memory.set(i, pos + 1);
-            i += pos;
+            memory.set(pos, val + 1);
+            pos += val;
 
             steps++;
 
